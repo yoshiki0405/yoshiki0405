@@ -1,9 +1,8 @@
 
 
 <h2 align="left">connect with me</h3>
-<p align="left">
-  <a href="https://twitter.com/yoshiki0405_" target="blank"><img src="style=for-the-badge" alt="yoshiki0405_" /></a>
-</p>
+
+- [X](https://twitter.com/yoshiki0405_)
 
 - [Zenn](https://zenn.dev/y045)
 
