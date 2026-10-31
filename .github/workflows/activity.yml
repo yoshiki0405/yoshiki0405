@@ -1,4 +1,4 @@
-name: Update activity card
+name: Update profile cards
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   push:
     branches: [main]
     paths:
-      - scripts/generate-activity.mjs
+      - scripts/**
       - .github/workflows/activity.yml
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/generate-activity.mjs
+      - run: node scripts/generate-profile.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit if changed
@@ -33,5 +33,5 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update activity card"
+          git commit -m "Update profile cards"
           git push

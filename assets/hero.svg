@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="882" height="190" viewBox="0 0 882 190" role="img" aria-label="Yoshiki">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1a33"/><stop offset="1" stop-color="#111733"/></linearGradient>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="46"/></filter>
+<clipPath id="clip"><rect width="882" height="190" rx="16"/></clipPath>
+</defs>
+<style>
+text { font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #ffffff; }
+.name { font-size: 60px; font-weight: 700; letter-spacing: -0.03em; }
+.tag { font-size: 18px; fill: #c4d4f0; }
+.a { animation: drift 14s ease-in-out infinite alternate; }
+.b { animation: drift 18s ease-in-out infinite alternate-reverse; }
+.up { animation: up .8s ease-out both; }
+.up2 { animation: up .8s ease-out .15s both; }
+@keyframes drift { from { transform: translate(-70px, -14px); } to { transform: translate(70px, 18px); } }
+@keyframes up { from { opacity: 0; transform: translateY(10px); } }
+@media (prefers-reduced-motion: reduce) { .a, .b, .up, .up2 { animation: none; } }
+</style>
+<g clip-path="url(#clip)">
+<rect width="882" height="190" fill="url(#bg)"/>
+<g filter="url(#blur)">
+<circle class="a" cx="170" cy="60" r="110" fill="#2a78d6" opacity=".75"/>
+<circle class="b" cx="710" cy="140" r="120" fill="#6250d6" opacity=".7"/>
+<circle class="a" cx="470" cy="210" r="80" fill="#199e70" opacity=".4"/>
+</g>
+</g>
+<text class="name up" x="441" y="106" text-anchor="middle">Yoshiki</text>
+<text class="tag up2" x="441" y="142" text-anchor="middle">TypeScript  ·  Next.js  ·  Ebisu</text>
+</svg>
